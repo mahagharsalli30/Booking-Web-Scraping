@@ -124,7 +124,7 @@ for country, city in countries.items():
             })
 
         # Save progress after every country+season combo
-        # so you don't lose data if the connection drops again
+        # so data won't be lost if the connection drops again
         pd.DataFrame(all_data).to_csv("north_africa_hotels.csv", index=False, encoding="utf-8-sig")
         print(f"   Progress saved — {len(all_data)} records so far")
 
